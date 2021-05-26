@@ -17,5 +17,6 @@
   "dependencies": {
     "axios": "^0.21.1",
     "prompts": "^2.4.1"
-  }
+  },
+  "bin": "dist/src/index.js"
 }
