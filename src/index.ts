@@ -23,7 +23,7 @@ const chuckJokesCategories = [
     { title: "Travel", value: "travel" }
 ];
 
-(async function chuckJokes() {
+export async function chuckJokes() {
     const args = process.argv.splice(process.execArgv.length + 2);
     const arg = args[0];
 
@@ -52,4 +52,6 @@ const chuckJokesCategories = [
     }
 
     console.info(joke.value);
-})();
+};
+
+chuckJokes();
