@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-import prompts = require("prompts");
+import * as prompts from 'prompts';
+import { ARGUMENT_NOT_ALLOWED, MULTIPLE_ARGUMENTS_NOT_ALLOWED_MESSAGE, NO_ARGUMENTS_MESSAGE } from "./constatns/messages";
 import { getJoke } from "./services/jokes.service";
 
 const chuckJokesCategories = [
@@ -27,11 +28,11 @@ const chuckJokesCategories = [
     const arg = args[0];
 
     if (args.length > 1) {
-        return console.info("You can only pass one argument; `random` or `category`");
+        return console.info(MULTIPLE_ARGUMENTS_NOT_ALLOWED_MESSAGE);
     }
 
     if (!arg) {
-        return console.info("You need to pass one of the following arguments: `random` or `category`.");
+        return console.info(NO_ARGUMENTS_MESSAGE);
     }
 
     let joke;
@@ -47,7 +48,7 @@ const chuckJokesCategories = [
         });
         joke = await getJoke(category.value);
     } else {
-        return console.log(`Sorry, ${arg} is not a valid argument.`);
+        return console.info(ARGUMENT_NOT_ALLOWED(arg));
     }
 
     console.info(joke.value);
