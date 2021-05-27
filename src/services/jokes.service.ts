@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const CHUCK_JOKES_URL = 'https://api.chucknorris.io/jokes/random';
+const CHUCK_JOKES_URL = process.env.NODE_ENV === 'TEST' ? 'JOKE_API' : 'https://api.chucknorris.io/jokes/random';
 
 type Joke = {
     value: string;
