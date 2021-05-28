@@ -1,7 +1,7 @@
 import * as jokesService from './services/jokes.service';
 import * as prompts from 'prompts';
 import { chuckJokes } from ".";
-import { ARGUMENT_NOT_ALLOWED, MULTIPLE_ARGUMENTS_NOT_ALLOWED_MESSAGE, NO_ARGUMENTS_MESSAGE } from "./constatns/messages";
+import { ARGUMENT_NOT_ALLOWED, MULTIPLE_ARGUMENTS_NOT_ALLOWED_MESSAGE, NO_ARGUMENTS_MESSAGE } from "./constants/messages";
 
 jest.mock('prompts', () => jest.fn().mockResolvedValueOnce({value: 'joke_category'}));
 

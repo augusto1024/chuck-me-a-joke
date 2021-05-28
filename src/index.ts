@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import * as prompts from 'prompts';
-import { ARGUMENT_NOT_ALLOWED, MULTIPLE_ARGUMENTS_NOT_ALLOWED_MESSAGE, NO_ARGUMENTS_MESSAGE } from "./constatns/messages";
+import { ARGUMENT_NOT_ALLOWED, MULTIPLE_ARGUMENTS_NOT_ALLOWED_MESSAGE, NO_ARGUMENTS_MESSAGE } from "./constants/messages";
 import { getJoke } from "./services/jokes.service";
 
 const chuckJokesCategories = [
