@@ -27,5 +27,11 @@
     "type": "git",
     "url": "https://github.com/augusto1024/chuck-me-a-joke"
   },
-  "homepage": "https://github.com/augusto1024/chuck-me-a-joke#readme"
+  "homepage": "https://github.com/augusto1024/chuck-me-a-joke#readme",
+  "keywords": [
+    "node",
+    "npm",
+    "chuck-norris",
+    "jokes"
+  ]
 }
