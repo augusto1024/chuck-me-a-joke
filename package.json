@@ -22,5 +22,10 @@
     "prompts": "^2.4.1",
     "ts-node": "^10.0.0"
   },
-  "bin": "dist/src/index.js"
+  "bin": "dist/src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/augusto1024/chuck-me-a-joke"
+  },
+  "homepage": "https://github.com/augusto1024/chuck-me-a-joke#readme"
 }
